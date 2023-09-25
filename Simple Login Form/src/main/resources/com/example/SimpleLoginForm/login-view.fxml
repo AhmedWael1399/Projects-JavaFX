@@ -18,7 +18,7 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <TextField fx:id="usernameField" layoutX="267.0" layoutY="80.0" />
+      <TextField fx:id="usernameField" layoutX="267.0" layoutY="80.0" promptText="ex. Ahmed" />
       <Label layoutX="61.0" layoutY="138.0" prefHeight="46.0" prefWidth="187.0" text="Enter Password" textFill="#28fa35">
          <font>
             <Font size="25.0" />
