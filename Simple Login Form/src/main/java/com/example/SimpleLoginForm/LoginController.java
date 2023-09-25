@@ -5,12 +5,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-
 import java.io.IOException;
 
 public class LoginController {
@@ -61,7 +58,16 @@ public class LoginController {
         }
     }
     public void exit(ActionEvent event){
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.close();
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Exit");
+        alert.setHeaderText("You're about to exit!");
+        alert.setContentText("Are you sure you want to exit");
+
+        if (alert.showAndWait().get() == ButtonType.OK){
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            stage.close();
+        }
+
+
     }
 }
