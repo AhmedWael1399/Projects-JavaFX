@@ -1,4 +1,4 @@
-module com.example.trial {
+module com.example.SimpleLoginForm {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
