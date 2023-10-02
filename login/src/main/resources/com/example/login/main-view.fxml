@@ -31,7 +31,7 @@
                     </children>
                 </AnchorPane>
                 <AnchorPane fx:id="signup_form" prefHeight="626.0" prefWidth="417.0" visible="false">
-                    <children   >
+                    <children>
                         <TextField fx:id="usernameSignup" layoutX="99.0" layoutY="263.0" prefHeight="42.0" prefWidth="220.0" promptText="Username" />
                   <Label layoutX="81.0" layoutY="402.0" prefHeight="26.0" prefWidth="242.0" />
                         <TextField fx:id="passwordSignup" layoutX="99.0" layoutY="344.0" prefHeight="42.0" prefWidth="220.0" promptText="Password" />
